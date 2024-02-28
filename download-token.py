@@ -30,7 +30,7 @@ import time
 MIN_VALIDITY = timedelta(seconds=10)
 MAX_RETRY_TIME = timedelta(minutes=5)
 RETRY_SLEEP_SECS = 30
-GIT_URL = "https://github.com/sigstore-conformance/extremely-dangerous-public-oidc-beacon.git"
+GIT_URL = "https://github.com/jku/extremely-dangerous-public-oidc-beacon.git"
 
 logger = logging.getLogger(__name__)
 
