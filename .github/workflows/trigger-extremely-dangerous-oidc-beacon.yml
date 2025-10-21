@@ -6,6 +6,10 @@ name: Trigger for extremely dangerous OIDC beacon
 on:
   schedule:
     - cron: "*/5 * * * *"
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 # Make sure we cancel any in-progress OIDC generation jobs if they're already queued.
 #
