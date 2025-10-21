@@ -78,4 +78,4 @@ jobs:
             -H "Authorization: Bearer ${{ github.token }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             "${REPO_URL}/actions/workflows/${BEACON_NAME}/dispatches" \
-            -d '{"ref":"${GITHUB_REF}"}' \
+            -d "{\"ref\":\"${GITHUB_REF}\"}" \
