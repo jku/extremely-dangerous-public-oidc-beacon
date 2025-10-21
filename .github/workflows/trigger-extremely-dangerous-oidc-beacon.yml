@@ -66,6 +66,7 @@ jobs:
         run: |
           BEACON_NAME="extremely-dangerous-oidc-beacon.yml"
           REPO_URL="${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}"
+          set -x
           curl -L \
             --fail \
             -X POST \
